@@ -215,13 +215,12 @@ export default function Home() {
             className="w-full mt-0 mb-10 overflow-hidden"
           >
             <Image
-              src="/meraki-community-group.png"
+              src="/meraki-community-group.jpg"
               alt="Meraki community group photo"
               width={2036}
               height={1527}
               className="w-full h-auto object-cover img-vintage-strong"
               style={{ objectPosition: 'center center' }}
-              priority
             />
           </div>
         </div>
