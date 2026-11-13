@@ -34,10 +34,17 @@ export default function Home() {
       <header className="fixed top-0 left-0 right-0 z-50 px-6 py-5 flex items-center justify-between bg-[#0a0a0a]/90 backdrop-blur-sm">
         <a
           href="/"
-          className={`text-xl font-bold tracking-tight transition-opacity duration-200 ${menuOpen ? "opacity-0 pointer-events-none" : "opacity-100"
+          className={`inline-flex items-center transition-opacity duration-200 ${menuOpen ? "opacity-0 pointer-events-none" : "opacity-100"
             }`}
         >
-          Meraki
+          <Image
+            src="/meraki-logo-smiley.png"
+            alt="Meraki"
+            width={320}
+            height={96}
+            className="h-8 w-auto md:h-9"
+            priority
+          />
         </a>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -164,10 +171,12 @@ export default function Home() {
           </div>
 
           {/* Tagline */}
-          <div className="max-w-xl mb-10">
-            <p className="text-xl md:text-2xl leading-relaxed text-gray-300">
-              Find your rhythm, co-work, and build alongside others.{" "}
-              <em className="font-normal text-[#f5f5f5]">passion projects</em> with likeminded people.
+          <div className="max-w-3xl mb-10">
+            <p className="text-xl md:text-2xl leading-relaxed text-gray-300 font-bold">
+              A space for builders of all kinds, artists, filmmakers, engineers, coders, learners, researchers, founders and designers.
+            </p>
+            <p className="mt-4 text-xl md:text-2xl leading-relaxed text-gray-300">
+              We meet every week to create whatever it is that makes us feel alive :)
             </p>
           </div>
 
@@ -206,10 +215,10 @@ export default function Home() {
             className="w-full mt-0 mb-10 overflow-hidden"
           >
             <Image
-              src="/selfie_kickoff-extended.png"
+              src="/meraki-community-group.png"
               alt="Meraki community group photo"
-              width={1920}
-              height={700}
+              width={2036}
+              height={1527}
               className="w-full h-auto object-cover img-vintage-strong"
               style={{ objectPosition: 'center center' }}
               priority
@@ -401,44 +410,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Season 3 Announcement */}
-      <section className="py-32 px-6 md:px-12 lg:px-20 relative overflow-hidden">
-        {/* Decorative background - kept subtle and contained */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <path d="M0,0 C30,20 70,20 100,0 L100,100 C70,80 30,80 0,100 Z" fill="none" stroke="#333" strokeWidth="0.5" />
-            <path d="M0,20 C30,40 70,40 100,20 L100,120" fill="none" stroke="#333" strokeWidth="0.5" />
-          </svg>
-        </div>
-
-        <div className="max-w-4xl mx-auto text-center relative z-10">
-          <div className="inline-block mb-6">
-            <span className="text-xs tracking-[0.2em] uppercase text-[#B85C38]">
-              P.S.
-            </span>
-          </div>
-
-          <h3 className="text-2xl md:text-4xl font-bold mb-6 leading-tight font-serif">
-            Meraki is back for <span className="italic text-[#D4B055] whitespace-nowrap">Season 3</span><br />
-            and you're invited!
-          </h3>
-
-          <p className="text-gray-400 mb-10 text-sm font-serif">
-            Sponsored by <span className="text-[#f5f5f5]">1517</span> and <span className="text-[#f5f5f5]">Entrepreneurs First</span>
-          </p>
-
-          <a
-            href="https://luma.com/merakiuoft"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-[#f5f5f5] text-[#0a0a0a] rounded-full font-medium tracking-wide hover:bg-white transition-colors"
-          >
-            <ArrowUpRight className="w-5 h-5" />
-            RSVP Now
-          </a>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="py-16 px-6 md:px-12 lg:px-20 border-t border-[#222]">
         <div className="max-w-6xl mx-auto">
@@ -465,9 +436,9 @@ export default function Home() {
 
             {/* Credits */}
             <div>
-              <h4 className="text-xs tracking-[0.2em] uppercase text-gray-500 mb-4">Season 3 Co-hosts</h4>
+              <h4 className="text-xs tracking-[0.2em] uppercase text-gray-500 mb-4">Season 6 Co-hosts</h4>
               <p className="text-gray-400 text-sm leading-relaxed">
-                Kenny Guo, Richa Pandya, Anupam Chettimada, Samantha Chan, Krupa Dave
+                Anupam Chettimada, Samantha Chan, Krupa Dave, Krisha Dave, Daniel Guo
               </p>
             </div>
           </div>
